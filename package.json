@@ -1,0 +1,28 @@
+{
+  "name": "p2note",
+  "version": "1.0.0",
+  "description": "Penetration testing payload note",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager ./ P2note --platform=all --out ./release --icon=./dist/data/favicon.ico --overwrite",
+    "packWin64": "electron-packager ./ P2note --platform=win32 --arch=x64 --out ./release --icon=./dist/data/favicon.ico --overwrite",
+    "packWin32": "electron-packager ./ P2note --platform=win32 --arch=ia32 --out ./release --icon=./dist/data/favicon.ico --overwrite",
+    "packLinux": "electron-packager ./ P2note --platform=linux --arch=arm64 --out ./release --icon=./dist/data/favicon.ico --overwrite",
+    "packDarwin": "electron-packager ./ P2note --platform=darwin --arch=x64 --out ./release --icon=./dist/data/favicon.icns --overwrite",
+    "packDmg": "electron-installer-dmg ./release/P2note-darwin-x64/P2note.app P2note"
+  },
+  "repository": "https://github.com/Evilran/P2note",
+  "author": "SevenC-base & Evi1ran",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^13.1.9",
+    "electron-pack": "^1.3.2"
+  },
+  "dependencies": {
+    "appdmg": "^0.6.2",
+    "electron-installer-dmg": "^3.0.0",
+    "electron-packager": "^15.3.0",
+    "nan": "^2.15.0"
+  }
+}
