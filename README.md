@@ -1,6 +1,6 @@
 # P2note
 
-**本项目是 P2note 的客户端打包版本，请在 release 中下载**
+**本项目是 P2note 的客户端打包版本，请在 Releases 中下载**
 
 原项目传送门：[P2note@SevenC-base](https://github.com/SevenC-base/P2note)
 
